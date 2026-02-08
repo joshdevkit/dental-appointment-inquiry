@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dental Clinic — Warm & Friendly Design System
+   All colors MUST be HSL.
+*/
+
+
+@layer base {
+  :root {
+    /* Warm cream background */
+    --background: 30 33% 98%;
+    --foreground: 20 20% 18%;
+
+    /* Soft warm white cards */
+    --card: 0 0% 100%;
+    --card-foreground: 20 20% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 20% 18%;
+
+    /* Coral primary */
+    --primary: 12 76% 61%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm peach secondary */
+    --secondary: 20 60% 95%;
+    --secondary-foreground: 20 20% 18%;
+
+    /* Soft warm muted */
+    --muted: 25 30% 94%;
+    --muted-foreground: 20 10% 50%;
+
+    /* Light peach accent */
+    --accent: 16 65% 93%;
+    --accent-foreground: 20 20% 18%;
+
+    /* Red for destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Warm borders */
+    --border: 25 20% 88%;
+    --input: 25 20% 88%;
+    --ring: 12 76% 61%;
+
+    --radius: 0.75rem;
+
+    /* Status colors */
+    --status-pending: 43 96% 56%;
+    --status-approved: 142 71% 45%;
+    --status-rescheduled: 217 91% 60%;
+    --status-cancelled: 0 72% 51%;
+
+    /* Sidebar */
+    --sidebar-background: 20 25% 96%;
+    --sidebar-foreground: 20 20% 18%;
+    --sidebar-primary: 12 76% 61%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 16 65% 93%;
+    --sidebar-accent-foreground: 20 20% 18%;
+    --sidebar-border: 25 20% 88%;
+    --sidebar-ring: 12 76% 61%;
+  }
+
+  .dark {
+    --background: 20 20% 10%;
+    --foreground: 30 20% 92%;
+
+    --card: 20 18% 14%;
+    --card-foreground: 30 20% 92%;
+
+    --popover: 20 18% 14%;
+    --popover-foreground: 30 20% 92%;
+
+    --primary: 12 76% 61%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 15% 20%;
+    --secondary-foreground: 30 20% 92%;
+
+    --muted: 20 15% 20%;
+    --muted-foreground: 25 10% 60%;
+
+    --accent: 20 15% 20%;
+    --accent-foreground: 30 20% 92%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 30 20% 92%;
+
+    --border: 20 15% 22%;
+    --input: 20 15% 22%;
+    --ring: 12 76% 61%;
+
+    --sidebar-background: 20 18% 12%;
+    --sidebar-foreground: 30 20% 92%;
+    --sidebar-primary: 12 76% 61%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 15% 18%;
+    --sidebar-accent-foreground: 30 20% 92%;
+    --sidebar-border: 20 15% 22%;
+    --sidebar-ring: 12 76% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'DM Serif Display', serif;
+  }
+}
